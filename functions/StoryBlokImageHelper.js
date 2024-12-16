@@ -115,3 +115,5 @@ export function getDefaultStoryBlokImageSet(url, alt, {largestImageWidth, larges
 	let breakpoints = [breakpoint];
 	return getResponsiveStoryBlokImageSet(url, alt, imageSizes, breakpoints, className);
 }
+
+..
