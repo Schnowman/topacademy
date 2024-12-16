@@ -1,12 +1,12 @@
-﻿import React, { Component } from "react";
-import css from "./Location.module.scss";
+import React, { Component } from "react";
+import css from "./Blogpost.module.scss";
 import Headermenu from "../../genericComponents/Headermenu/Headermenu";
 import Hero from "../../genericComponents/Hero/Hero";
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 import { RichTextToHTML } from "../../../functions/storyBlokRichTextRenderer";
+import List from "../../genericComponents/List/List";
 
-
-export default class Location extends Component {
+export default class Blogpost extends Component {
 
 	constructor(props) {
 		super(props);
@@ -17,20 +17,17 @@ export default class Location extends Component {
 			<div {...storyblokEditable(this.props.blok)}>
 				<Headermenu blok={this.props.menu.content}></Headermenu> //Ensures the "Blog" menu item appears in the navigation.
 
-
 				<main>
-					<Hero blok={this.props.blok} contentTypeTag="course" /> //This code displays the hero section
+					<Hero blok={this.props.blok} contentTypeTag="blog" /> //Displays the hero component
 
-					//The following code displays the intro
-					<div className={css["location-page__main-content"]}>
-						<div id="location-page__short-description" key="location-page__short-description" className={css["location-page__short-description"]}>
+					<div className={css["blog-page__main-content"]}>
+						<div id="blog-page__short-description" key="blog-page__short-description" className={css["blog-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
 								<h2 className={css["rich-text-section__title"]}>Location Details</h2>
 								<div className={css["rich-text-section__rich-text"]}>{RichTextToHTML({ document: this.props.blok.description })}</div>
 							</section>
 						</div>
 					</div>
-					//The following code displays the list
 					{this.props.blok.additionalstuff.map((nestedBlok) => (
 							<StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
 						))}
