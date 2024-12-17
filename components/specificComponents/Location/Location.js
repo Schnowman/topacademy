@@ -15,13 +15,13 @@ export default class Location extends Component {
 	render() {
 		return (
 			<div {...storyblokEditable(this.props.blok)}>
-				<Headermenu blok={this.props.menu.content}></Headermenu> //Ensures the "Blog" menu item appears in the navigation.
+				<Headermenu blok={this.props.menu.content}></Headermenu> 
 
 
 				<main>
-					<Hero blok={this.props.blok} contentTypeTag="course" /> //This code displays the hero section
+					<Hero blok={this.props.blok} contentTypeTag="location" /> {/*This code displays the hero section. WHY IS IT STILL CALLED COURSE?*/}
 
-					//The following code displays the intro
+					{/*The following code displays the intro*/}
 					<div className={css["location-page__main-content"]}>
 						<div id="location-page__short-description" key="location-page__short-description" className={css["location-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
@@ -30,7 +30,7 @@ export default class Location extends Component {
 							</section>
 						</div>
 					</div>
-					//The following code displays the list
+					{/*The following code displays the list*/}
 					{this.props.blok.additionalstuff.map((nestedBlok) => (
 							<StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
 						))}

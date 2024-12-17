@@ -13,7 +13,7 @@ export default function Page({ story, preview, socialtags, menu }) {
       "course.teachers",
       "course.products",
       "list.elements",
-      "blog.blogposts" //this might be needed to create the relation between the blog page and the individual blogposts
+      "blog.blogpost" //this might be needed to create the relation between the blog page and the individual blogposts
     ]
   }, preview);
 
