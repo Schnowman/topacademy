@@ -25,7 +25,7 @@ export default class Artist extends Component {
 						<div id="artist-page__short-description" key="artist-page__short-description" className={css["artist-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
 								<h2 className={css["rich-text-section__title"]}>Artist Details</h2>
-								<div className={css["rich-text-section__rich-text"]}>{RichTextToHTML({ document: this.props.blok.bio })}</div>
+								<div className={css["rich-text-section__rich-text"]}>{RichTextToHTML({ document: this.props.blok.description })}</div>
 							</section>
 						</div>
 					</div>
