@@ -28,7 +28,10 @@ import Location from '../components/specificComponents/Location/Location';
 import Blogpost from '../components/specificComponents/Blogpost/Blogpost';
 import Artist from '../components/specificComponents/Artist/Artist';
 import Song from '../components/specificComponents/Song/Song';
-
+import City from '../components/specificComponents/City/City';
+import Barorcafe from '../components/specificComponents/BarOrCafe/BarOrCafe';
+import Restaurant from '../components/specificComponents/Restaurant/Restaurant';
+import SightseeingSpot from '../components/specificComponents/SightseeingSpot/SightseeingSpot';
 
 const components = {
   person: Teacher,
@@ -51,7 +54,11 @@ const components = {
   location: Location,
   blogpost: Blogpost,
   artist: Artist,
-  song: Song
+  song: Song,
+  city: City,
+  barorcafe: Barorcafe,
+  restaurant: Restaurant,
+  sightseeingspot: SightseeingSpot
 };
 
 storyblokInit({

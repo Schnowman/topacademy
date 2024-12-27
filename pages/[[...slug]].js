@@ -15,7 +15,6 @@ export default function Page({ story, preview, socialtags, menu }) {
       "list.elements",
       "song.colorcode",
       "blogpost.colorcode"
-      // "blog.blogpost", //this might be needed to create the relation between the blog page and the individual blogposts
     ]
   }, preview);
 
