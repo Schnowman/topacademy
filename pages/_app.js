@@ -29,7 +29,7 @@ import Blogpost from '../components/specificComponents/Blogpost/Blogpost';
 import Artist from '../components/specificComponents/Artist/Artist';
 import Song from '../components/specificComponents/Song/Song';
 import City from '../components/specificComponents/City/City';
-import Barorcafe from '../components/specificComponents/BarOrCafe/BarOrCafe';
+import Barorcafe from '../components/specificComponents/Barorcafe/Barorcafe';
 import Restaurant from '../components/specificComponents/Restaurant/Restaurant';
 import SightseeingSpot from '../components/specificComponents/SightseeingSpot/SightseeingSpot';
 
