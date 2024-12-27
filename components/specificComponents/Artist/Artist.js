@@ -1,12 +1,12 @@
 ﻿import React, { Component } from "react";
-import css from "./Location.module.scss";
+import css from "./Artist.module.scss";
 import Headermenu from "../../genericComponents/Headermenu/Headermenu";
 import Hero from "../../genericComponents/Hero/Hero";
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 import { RichTextToHTML } from "../../../functions/storyBlokRichTextRenderer";
 
 
-export default class Location extends Component {
+export default class Artist extends Component {
 
 	constructor(props) {
 		super(props);
@@ -19,23 +19,22 @@ export default class Location extends Component {
 
 
 				<main>
-					<Hero blok={this.props.blok} contentTypeTag="location" /> {/*This code displays the hero section (title and image)*/}
+					<Hero blok={this.props.blok} contentTypeTag="artist" />
 
-					{/*The following code displays the intro/description*/}
-					<div className={css["location-page__main-content"]}>
-						<div id="location-page__short-description" key="location-page__short-description" className={css["location-page__short-description"]}>
+					<div className={css["artist-page__main-content"]}>
+						<div id="artist-page__short-description" key="artist-page__short-description" className={css["artist-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
-								<h2 className={css["rich-text-section__title"]}>Location Details</h2>
-								<div className={css["rich-text-section__rich-text"]}>{RichTextToHTML({ document: this.props.blok.description })}</div>
+								<h2 className={css["rich-text-section__title"]}>Artist Details</h2>
+								<div className={css["rich-text-section__rich-text"]}>{RichTextToHTML({ document: this.props.blok.bio })}</div>
 							</section>
 						</div>
 					</div>
-					{/*The following code displays the list*/}
 					{this.props.blok.additionalstuff.map((nestedBlok) => (
 							<StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
 						))}
 				</main>
 			</div>
 		);
+
 	}
 }

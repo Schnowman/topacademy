@@ -2,7 +2,7 @@
 @import "../../../styles/colors.scss";
 
 
-.location-page {
+.artist-page {
 
   &__main-content {
     display: grid;
@@ -18,14 +18,14 @@
 
 
 
-// @media only screen and (min-width: 500px) {
-//   .location-page {}
-// }
+@media only screen and (min-width: 500px) {
+  .artist-page {}
+}
 
 
 
 @media only screen and (min-width: 850px) {
-  .location-page {
+  .artist-page {
 
     &__main-content {
       grid-template-columns: auto 552px auto;
@@ -42,7 +42,7 @@
 
 
 @media only screen and (min-width: 1250px) {
-  .location-page {
+  .artist-page {
 
     &__main-content {
       grid-template-columns: auto 729px auto;
@@ -57,7 +57,7 @@
 
 
 @media only screen and (min-width: 1400px) {
-  .location-page {
+  .artist-page {
 
     &__main-content {
       grid-template-columns: auto 835px auto;
@@ -68,7 +68,7 @@
 
 
 @media only screen and (min-width: 1600px) {
-  .location-page {
+  .artist-page {
 
     &__main-content {
       grid-template-columns: auto 920px auto;

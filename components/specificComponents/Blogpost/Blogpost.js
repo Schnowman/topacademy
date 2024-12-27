@@ -20,13 +20,13 @@ export default class Blogpost extends Component {
 				{/* starting from here I need to figure out what the problem is in regards to styling */}
 				
 				<main>
-					<Hero blok={this.props.blok} contentTypeTag="blogpost" />
+					<Hero blok={this.props.blok} contentTypeTag="blog" />
 
 					<div className={css["blogpost-page__main-content"]}>
 						<div id="blogpost-page__short-description" key="blogpost-page__short-description" className={css["blogpost-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
 								<h2 className={css["rich-text-section__title"]}>What I want to talk about</h2>
-								<div className={css["rich-text-section__rich-text"]}>{RichTextToHTML({ document: this.props.blok.content})}</div>
+								<div className={css["rich-text-section__rich-text"]}>{RichTextToHTML({ document: this.props.blok.description})}</div>
 							</section>
 						</div>
 					</div>

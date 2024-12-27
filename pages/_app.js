@@ -26,6 +26,8 @@ import ImageCarousel from '../components/genericComponents/ImageCarousel/ImageCa
 import Product from '../components/specificComponents/Product/Product';
 import Location from '../components/specificComponents/Location/Location';
 import Blogpost from '../components/specificComponents/Blogpost/Blogpost';
+import Artist from '../components/specificComponents/Artist/Artist';
+import Song from '../components/specificComponents/Song/Song';
 
 
 const components = {
@@ -47,7 +49,9 @@ const components = {
   imagecarousel: ImageCarousel,
   product: Product,
   location: Location,
-  blogpost:Blogpost
+  blogpost: Blogpost,
+  artist: Artist,
+  song: Song
 };
 
 storyblokInit({

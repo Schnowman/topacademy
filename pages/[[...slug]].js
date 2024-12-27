@@ -13,7 +13,9 @@ export default function Page({ story, preview, socialtags, menu }) {
       "course.teachers",
       "course.products",
       "list.elements",
-      "blog.blogpost" //this might be needed to create the relation between the blog page and the individual blogposts
+      "song.colorcode",
+      "blogpost.colorcode"
+      // "blog.blogpost", //this might be needed to create the relation between the blog page and the individual blogposts
     ]
   }, preview);
 
@@ -39,7 +41,9 @@ export async function getStaticProps({ params }) {
       "product.colorcode",
       "course.teachers",
       "course.products",
-      "list.elements"
+      "list.elements",
+      "song.colorcode",
+      "blogpost.colorcode"
     ]
   };
 

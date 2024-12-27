@@ -11,9 +11,10 @@ import { getDefaultStoryBlokImageSet } from "../../../functions/StoryBlokImageHe
 
 export default function Hero({ blok }) {
 	let showImage = (blok.image && blok.image.filename);
-	let colorCssName = "--" + blok.colorcode?.content.title;
+	let colorCssName = "--" + blok.colorcode?.content.title; //this is causing a problem in the new pages song
 	let titleString = typeof blok.title === "string" ? blok.title : undefined;
 	let taglineString = typeof blok.tagline === "string" ? blok.tagline : undefined;
+	console.log("Hero blok data:", blok);
 
 	return (
 		<>
