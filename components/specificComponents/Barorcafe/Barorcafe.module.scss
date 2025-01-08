@@ -3,7 +3,8 @@
 
 
 .barorcafe-page {
-
+  background-color: $color-green;
+  
   &__main-content {
     display: grid;
     grid-template-columns: 0 auto;
